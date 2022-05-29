@@ -1,0 +1,41 @@
+body {
+    height: 100vh;
+    background-color: lightpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    display: flex;
+}
+
+.slot {
+    width: 100px;
+    height: 100px;
+    /* background-color: blue; */
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    overflow: hidden;
+}
+
+.hole {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: white;
+    border: solid 40px blue;
+    flex-shrink: 0;
+    z-index: -1;
+}
+
+.player1 {
+    background-color: red;
+}
+
+.player2 {
+    background-color: yellow;
+}
